@@ -23,7 +23,7 @@ Based on their responses, users receive **personalized recommendations** for dai
 
 1. **Download or Clone this Repository**
    ```bash
-   git clone https://github.com/your-username/PrakritiFit.git
+   git clone https://github.com/RP45-hub/ayurvedic-dosha-assessment
    ```
 2. **Open the Project Folder**
    ```bash
@@ -208,3 +208,4 @@ This project is open-source and free for **personal and educational use**.
 > It should not replace professional medical consultation.
 
 ---
+
