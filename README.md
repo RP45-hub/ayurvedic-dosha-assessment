@@ -1,200 +1,210 @@
-# Ayurvedic Dosha Assessment Website
+# 🌿 PrakritiFit – Ayurvedic Dosha Assessment Website
 
-A comprehensive web application that helps users discover their Ayurvedic constitution (dosha type) through a detailed questionnaire and provides personalized recommendations for daily routine, diet, and lifestyle.
-
-## Features
-
-### 🔐 User Authentication
-- **Sign Up**: Create a new account with name, email, and password
-- **Login**: Secure authentication for returning users
-- **Profile Management**: View personal information and assessment history
-- **Session Management**: Automatic login persistence
-
-### 🏠 Home Page
-- **Welcome Section**: Introduction to Ayurvedic dosha assessment
-- **Feature Overview**: What users can expect from the assessment
-- **Visual Dosha Icons**: Interactive display of the three dosha types (Vata, Pitta, Kapha)
-
-### 📋 Assessment System
-- **10 Comprehensive Questions**: Carefully crafted questions covering:
-  - Body frame and physical characteristics
-  - Skin type and texture
-  - Sleep patterns
-  - Stress handling
-  - Appetite and digestion
-  - Movement and speech patterns
-  - Weather preferences
-  - Memory and learning style
-  - Spending habits
-  - Approach to new situations
-
-- **Progress Tracking**: Visual progress bar and question counter
-- **Navigation**: Previous/Next buttons with answer validation
-- **Responsive Design**: Works seamlessly on all devices
-
-### 📊 Results & Recommendations
-- **Dosha Breakdown**: Visual representation of Vata, Pitta, and Kapha percentages
-- **Primary Dosha Identification**: Clear indication of dominant dosha
-- **Personalized Recommendations**:
-  - **Daily Routine**: 8 specific practices for your dosha type
-  - **Diet Guidelines**: 8 dietary recommendations
-  - **Lifestyle Tips**: 8 lifestyle practices for balance
-
-### 📚 Educational Content
-- **About Page**: Comprehensive information about Ayurveda and doshas
-- **Dosha Explanations**: Detailed descriptions of each dosha type
-- **Element Information**: Understanding of the five elements
-
-### 💾 Data Management
-- **Local Storage**: User data and assessment history stored locally
-- **Results Export**: Download assessment results as text file
-- **Assessment History**: View previous assessments and track changes
-
-## Dosha Types
-
-### 🌪️ Vata (Air + Ether)
-- **Characteristics**: Light, dry, cold, mobile
-- **Functions**: Movement, breathing, circulation
-- **When Balanced**: Creative, quick-thinking, adaptable
-- **Color**: Sky blue (#87CEEB)
-
-### 🔥 Pitta (Fire + Water)
-- **Characteristics**: Hot, sharp, light, oily
-- **Functions**: Digestion, metabolism, intelligence
-- **When Balanced**: Intelligent, focused, natural leaders
-- **Color**: Red (#FF6B6B)
-
-### 💧 Kapha (Earth + Water)
-- **Characteristics**: Heavy, slow, cool, oily
-- **Functions**: Structure, stability, growth
-- **When Balanced**: Strong, loyal, patient
-- **Color**: Teal (#4ECDC4)
-
-## How to Use
-
-### Getting Started
-1. **Open the Website**: Open `index.html` in your web browser
-2. **Create Account**: Click "Sign Up" and fill in your details
-3. **Start Assessment**: Navigate to the assessment page
-4. **Answer Questions**: Answer all 10 questions honestly
-5. **View Results**: Get your personalized dosha analysis
-6. **Follow Recommendations**: Implement the suggested daily routine, diet, and lifestyle tips
-
-### Taking the Assessment
-- **Be Honest**: Answer questions based on your natural tendencies, not what you wish you were
-- **Consider Patterns**: Think about your typical behavior over time, not just recent events
-- **Don't Overthink**: Go with your first instinct for the most accurate results
-- **Complete All Questions**: All questions are required for accurate dosha calculation
-
-### Understanding Results
-- **Primary Dosha**: Your dominant constitution type
-- **Percentage Breakdown**: Shows the balance of all three doshas
-- **Recommendations**: Tailored advice for your specific dosha type
-- **Regular Assessment**: Consider retaking the assessment periodically to track changes
-
-## Technical Details
-
-### File Structure
-```
-├── index.html          # Main HTML file with all pages
-├── styles.css          # Complete CSS styling
-├── script.js           # JavaScript functionality
-└── README.md           # This documentation
-```
-
-### Technologies Used
-- **HTML5**: Semantic markup and structure
-- **CSS3**: Modern styling with gradients, animations, and responsive design
-- **JavaScript (ES6+)**: Interactive functionality and data management
-- **Local Storage**: Client-side data persistence
-- **Font Awesome**: Icons for visual elements
-- **Google Fonts**: Poppins font family
-
-### Browser Compatibility
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
-- Mobile browsers
-
-## Features in Detail
-
-### Authentication System
-- User registration and login
-- Password validation
-- Session management
-- Profile data storage
-
-### Assessment Algorithm
-- Weighted scoring system for each dosha
-- 10 questions with 4 options each
-- Each option contributes to Vata, Pitta, and Kapha scores
-- Primary dosha determined by highest score
-
-### Responsive Design
-- Mobile-first approach
-- Flexible grid layouts
-- Touch-friendly interface
-- Adaptive navigation
-
-### Data Persistence
-- User accounts stored in localStorage
-- Assessment history tracking
-- Results export functionality
-- Cross-session data retention
-
-## Customization
-
-### Adding Questions
-To add more questions, edit the `questions` array in `script.js`:
-```javascript
-{
-    question: "Your question here?",
-    options: [
-        { text: "Option 1", vata: 3, pitta: 1, kapha: 0 },
-        { text: "Option 2", vata: 1, pitta: 3, kapha: 0 },
-        { text: "Option 3", vata: 0, pitta: 0, kapha: 3 },
-        { text: "Option 4", vata: 2, pitta: 1, kapha: 2 }
-    ]
-}
-```
-
-### Modifying Recommendations
-Edit the `doshaRecommendations` object in `script.js` to customize advice for each dosha type.
-
-### Styling Changes
-Modify `styles.css` to change colors, fonts, layouts, and animations.
-
-## Privacy & Security
-
-- **Local Storage**: All data is stored locally on your device
-- **No Server**: No data is sent to external servers
-- **User Control**: Users can clear their data by logging out
-- **No Tracking**: No analytics or tracking scripts
-
-## Future Enhancements
-
-Potential improvements for future versions:
-- **Backend Integration**: Server-side data storage
-- **Advanced Analytics**: Detailed dosha tracking over time
-- **Seasonal Recommendations**: Dosha-specific seasonal advice
-- **Recipe Database**: Dosha-specific meal suggestions
-- **Meditation Guides**: Dosha-specific meditation practices
-- **Community Features**: User forums and sharing
-- **Professional Consultation**: Integration with Ayurvedic practitioners
-
-## Support
-
-For questions or issues:
-1. Check that JavaScript is enabled in your browser
-2. Clear browser cache and try again
-3. Ensure you're using a modern web browser
-4. Check that all files are in the same directory
-
-## License
-
-This project is open source and available for personal and educational use.
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![License](https://img.shields.io/badge/License-Open--Source-green?style=for-the-badge)
 
 ---
 
-**Note**: This assessment is for educational purposes and should not replace professional medical advice. For serious health concerns, consult with qualified healthcare practitioners. 
+## 📘 Project Title
+**PrakritiFit – Ayurvedic Dosha Assessment Website**
+
+---
+
+## 🪷 Description
+
+A comprehensive **web application** that helps users discover their **Ayurvedic constitution (dosha type)** through a detailed interactive questionnaire.  
+Based on their responses, users receive **personalized recommendations** for daily routines, diet, and lifestyle—aligned with Ayurvedic wellness principles.
+
+---
+
+## ⚙️ Installation Steps
+
+1. **Download or Clone this Repository**
+   ```bash
+   git clone https://github.com/your-username/PrakritiFit.git
+   ```
+2. **Open the Project Folder**
+   ```bash
+   cd PrakritiFit
+   ```
+3. **Run the Project**
+   - Simply open `index.html` in your preferred web browser.
+   - *(Optional)* Use VS Code’s **Live Server** extension for a smoother local preview.
+
+---
+
+## ▶️ How to Run the Project
+
+1. **Open** `index.html` in any modern browser.
+2. **Sign Up** by entering your name, email, and password.
+3. **Login** to your account.
+4. **Start Assessment** → Answer 10 lifestyle questions.
+5. **View Your Results** → Get dosha breakdown and recommendations.
+6. **Save or Retake** → Download results or retake the test anytime.
+
+---
+
+## 🌟 Features
+
+### 🔐 User Authentication
+- **Sign Up / Login** using localStorage  
+- **Profile Page** with stored personal info and history  
+- **Session Persistence** for returning users  
+
+### 🏠 Home Page
+- Beautiful **hero section** introducing Ayurveda  
+- **Dosha icons** for Vata 🌪️, Pitta 🔥, and Kapha 💧  
+- Overview of what users can explore  
+
+### 📋 Assessment System
+- **10 Comprehensive Questions** covering:
+  - Body type, digestion, emotions, habits, etc.  
+- **Progress bar** and **question counter**
+- Fully **responsive layout** for all devices  
+
+### 📊 Results & Recommendations
+- **Dynamic Dosha Breakdown** using percentage bars  
+- **Primary Dosha Highlighted** (Vata / Pitta / Kapha)  
+- Personalized:
+  - 🕉️ **Daily Routine**
+  - 🥗 **Diet Recommendations**
+  - 🌸 **Lifestyle Tips**
+
+### 📚 Educational Content
+- **About Ayurveda Section** explaining the three doshas  
+- Detailed info on **elements**, **qualities**, and **balance**  
+
+### 💾 Data Management
+- All user data & results saved in **localStorage**  
+- **Download results** as `.txt` file  
+- **View past assessments** in profile  
+
+---
+
+## 🧬 Dosha Types Overview
+
+### 🌪️ Vata (Air + Ether)
+- **Qualities:** Light, dry, cold, mobile  
+- **Balanced Traits:** Creative, quick-thinking, adaptable  
+- **Color:** Sky Blue `#87CEEB`
+
+### 🔥 Pitta (Fire + Water)
+- **Qualities:** Hot, sharp, light, oily  
+- **Balanced Traits:** Focused, intelligent, leader  
+- **Color:** Red `#FF6B6B`
+
+### 💧 Kapha (Earth + Water)
+- **Qualities:** Heavy, slow, cool, oily  
+- **Balanced Traits:** Loyal, patient, grounded  
+- **Color:** Teal `#4ECDC4`
+
+---
+
+## 🧠 How to Use
+
+1. **Be Honest:** Answer according to your natural tendencies, not recent moods.  
+2. **Don’t Overthink:** Go with your first instinct for best results.  
+3. **Complete All Questions:** Each question contributes to dosha accuracy.  
+4. **Read Results Carefully:** Review both your dominant and secondary doshas.  
+
+---
+
+## 🛠️ Technical Details
+
+### 📁 File Structure
+```
+├── index.html       # Main HTML with multi-page structure
+├── styles.css       # Ayurvedic green-gold theme & animations
+├── script.js        # Quiz logic, user data, and recommendations
+└── README.md        # Project documentation
+```
+
+### 💻 Technologies Used
+- **HTML5** – Semantic structure  
+- **CSS3** – Responsive styling with gradients & animations  
+- **JavaScript (ES6)** – Core functionality  
+- **Local Storage** – Data persistence  
+- **Font Awesome** – Icons  
+- **Google Fonts (Poppins)** – Elegant typography  
+
+### 🌐 Browser Compatibility
+- ✅ Chrome  
+- ✅ Firefox  
+- ✅ Edge  
+- ✅ Safari  
+- ✅ Mobile browsers  
+
+---
+
+## 🧩 Customization
+
+### ➕ Add More Questions
+Edit the `questions` array in `script.js`:
+```javascript
+{
+  question: "Your new question here?",
+  options: [
+    { text: "Option 1", vata: 3, pitta: 1, kapha: 0 },
+    { text: "Option 2", vata: 1, pitta: 3, kapha: 0 },
+    { text: "Option 3", vata: 0, pitta: 0, kapha: 3 },
+    { text: "Option 4", vata: 2, pitta: 1, kapha: 2 }
+  ]
+}
+```
+
+### 🌿 Update Recommendations
+Modify the `doshaRecommendations` object in `script.js` to tailor new routines, diets, and tips.
+
+### 🎨 Change Colors or Fonts
+Open `styles.css` and edit theme colors, font sizes, or gradients.
+
+---
+
+## 🔒 Privacy & Security
+
+- Data stored **locally** (no external servers)  
+- Users can delete data anytime by logging out  
+- No analytics or third-party tracking  
+
+---
+
+## 🚀 Future Enhancements
+
+- 🌤️ Seasonal dosha tips  
+- 🍛 Recipe database by dosha  
+- 🧘‍♂️ Meditation and yoga modules  
+- 💬 Community discussion area  
+- ☁️ Backend integration for cloud sync  
+
+---
+
+## 🧰 Support
+
+If you face issues:
+1. Ensure JavaScript is enabled  
+2. Use a modern browser  
+3. Check that all files are in the same folder  
+4. Clear cache and reload  
+
+---
+
+## 👨‍💻 Author
+
+**Ritesh Patel**  
+GitHub: [RP45-hub](https://github.com/RP45-hub)  
+
+---
+
+## 📜 License
+
+This project is open-source and free for **personal and educational use**.
+
+---
+
+> ⚠️ **Disclaimer:**  
+> This application is for educational and wellness purposes only.  
+> It should not replace professional medical consultation.
+
+---
