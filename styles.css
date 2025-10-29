@@ -1,0 +1,1023 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* === Navigation (Green–Gold Theme) === */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0b6b4f; /* Deep herbal green */
+}
+
+.nav-logo i {
+    margin-right: 10px;
+    font-size: 1.8rem;
+    color: #BFA36A; /* Antique gold accent */
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #2b2b2b; /* Dark gray for readability */
+    font-weight: 500;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #0b6b4f; /* Green hover */
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #0b6b4f; /* Match menu color */
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+
+/* Page Management */
+.page {
+    display: none;
+    min-height: 100vh;
+    padding-top: 70px;
+}
+
+.page.active {
+    display: block;
+}
+
+/* === Authentication Pages (Green–Gold Theme) === */
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 70px);
+    padding: 20px;
+    background: linear-gradient(135deg, #e3f2e1 0%, #fff9e6 100%);
+}
+
+.auth-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.auth-header {
+    margin-bottom: 30px;
+}
+
+.auth-icon {
+    font-size: 3rem;
+    color: #0b6b4f; /* Herbal green */
+    margin-bottom: 20px;
+}
+
+.auth-header h2 {
+    color: #0b6b4f; /* Deep green heading */
+    margin-bottom: 10px;
+}
+
+.auth-header p {
+    color: #666;
+}
+
+.auth-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e1e5e9;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #0b6b4f; /* Focus color = green */
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #0b6b4f 0%, #bfa36a 100%); /* Green → Gold */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(11, 107, 79, 0.3);
+}
+
+.auth-footer {
+    margin-top: 20px;
+    color: #666;
+}
+
+.auth-footer a {
+    color: #0b6b4f; /* Green link */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.auth-footer a:hover {
+    color: #bfa36a; /* Gold hover link */
+}
+
+
+/* === Home Page (Green–Gold Theme) === */
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    min-height: calc(100vh - 70px);
+}
+
+/* Hero Content */
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0b6b4f; /* Herbal green */
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #4d4d4d; /* Soft dark gray */
+    margin-bottom: 30px;
+}
+
+/* CTA Button */
+.cta-btn {
+    padding: 16px 32px;
+    background: linear-gradient(135deg, #0b6b4f 0%, #bfa36a 100%); /* Green → Gold */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(11, 107, 79, 0.25);
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(11, 107, 79, 0.4);
+}
+
+/* Hero Image */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Dosha Icons */
+.dosha-icons {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dosha-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(191, 163, 106, 0.3); /* gold-tinted border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dosha-icon:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(191, 163, 106, 0.25);
+}
+
+.dosha-icon i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+/* Dosha Icon Colors */
+.dosha-icon.vata i {
+    color: #4fc3f7; /* Airy blue */
+}
+
+.dosha-icon.pitta i {
+    color: #ff7043; /* Fiery orange */
+}
+
+.dosha-icon.kapha i {
+    color: #4caf50; /* Earthy green */
+}
+
+.dosha-icon span {
+    color: #0b6b4f;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/* === Features Section === */
+.features-section {
+    background: #ffffff;
+    padding: 80px 20px;
+}
+
+.features-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #0b6b4f; /* Herbal green */
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Feature Cards */
+.feature-card {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f8f9f4; /* light cream-green background */
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(191, 163, 106, 0.3);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(191, 163, 106, 0.25);
+}
+
+.feature-card i {
+    font-size: 3rem;
+    color: #bfa36a; /* Gold accent */
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #0b6b4f; /* Green */
+}
+
+.feature-card p {
+    color: #4d4d4d;
+    line-height: 1.6;
+}
+
+/* === Assessment Page (Green–Gold Theme) === */
+
+.assessment-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    min-height: calc(100vh - 70px);
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #0b6b4f, #bfa36a); /* Green → Gold */
+    border-radius: 4px;
+    transition: width 0.3s ease;
+    width: 10%;
+}
+
+/* Question Box */
+.question-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.question-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #0b6b4f; /* Green heading */
+    text-align: center;
+}
+
+/* Options */
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.option-btn {
+    padding: 20px;
+    background: #f8f9f4; /* Light cream-green */
+    border: 2px solid #e1e5e9;
+    border-radius: 15px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    color: #333;
+}
+
+.option-btn:hover {
+    background: #0b6b4f; /* Herbal green */
+    color: white;
+    border-color: #0b6b4f;
+    transform: translateX(10px);
+}
+
+.option-btn.selected {
+    background: linear-gradient(135deg, #0b6b4f 0%, #bfa36a 100%);
+    color: white;
+    border-color: #bfa36a;
+}
+
+/* Navigation Buttons */
+.assessment-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn {
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #0b6b4f 0%, #bfa36a 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover:not(:disabled) {
+    background: linear-gradient(135deg, #0f8b65 0%, #d4b96e 100%);
+    transform: translateY(-2px);
+}
+
+.nav-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Question Counter */
+.question-counter {
+    font-weight: 600;
+    color: #0b6b4f; /* Green text */
+}
+
+
+/* === Results Page (Green–Gold Theme) === */
+.results-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    min-height: calc(100vh - 70px);
+}
+
+/* Header */
+.results-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.results-header h2 {
+    font-size: 2.5rem;
+    color: #f4e5b1; /* soft gold text */
+    margin-bottom: 20px;
+}
+
+/* Dosha Result Card */
+.dosha-result {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.dosha-result h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+/* Dosha Type Colors */
+.dosha-result.vata h3 {
+    color: #2e8b57; /* Herbal green tone */
+}
+
+.dosha-result.pitta h3 {
+    color: #bfa36a; /* Antique gold */
+}
+
+.dosha-result.kapha h3 {
+    color: #7da27d; /* Muted earthy green */
+}
+
+/* Results Sections */
+.results-content {
+    display: grid;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.result-section {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.result-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #0b6b4f;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.result-section h3 i {
+    color: #bfa36a; /* gold icons */
+}
+
+/* Dosha Breakdown Bars */
+.dosha-breakdown {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dosha-bar {
+    flex: 1;
+    min-width: 200px;
+}
+
+.dosha-bar h4 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.dosha-bar.vata h4 {
+    color: #2e8b57;
+}
+
+.dosha-bar.pitta h4 {
+    color: #bfa36a;
+}
+
+.dosha-bar.kapha h4 {
+    color: #7da27d;
+}
+
+.bar-container {
+    width: 100%;
+    height: 20px;
+    background: #f2f4ee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1s ease;
+}
+
+.bar-fill.vata {
+    background: linear-gradient(90deg, #2e8b57, #56b37a);
+}
+
+.bar-fill.pitta {
+    background: linear-gradient(90deg, #bfa36a, #e2c983);
+}
+
+.bar-fill.kapha {
+    background: linear-gradient(90deg, #7da27d, #a7c5a7);
+}
+
+/* Routine, Diet, Lifestyle Text */
+.routine-content, .diet-content, .lifestyle-content {
+    line-height: 1.8;
+    color: #333;
+}
+
+.routine-content ul, .diet-content ul, .lifestyle-content ul {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.routine-content li, .diet-content li, .lifestyle-content li {
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.results-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    padding: 15px 30px;
+    background: white;
+    color: #0b6b4f;
+    border: 2px solid #0b6b4f;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.action-btn:hover {
+    background: linear-gradient(135deg, #0b6b4f 0%, #bfa36a 100%);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* === About Page (Green–Gold Theme) === */
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    min-height: calc(100vh - 70px);
+}
+
+.about-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #f4e5b1; /* soft gold heading */
+    margin-bottom: 40px;
+}
+
+/* Main Content Card */
+.about-content {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+.about-section {
+    margin-bottom: 40px;
+}
+
+.about-section h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #0b6b4f; /* herbal green */
+    font-weight: 700;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* === Dosha Info Cards === */
+.dosha-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.dosha-card {
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 5px solid;
+    background: #fdfcf7; /* soft cream background for all */
+}
+
+/* --- Vata --- */
+.dosha-card.vata {
+    background: #eef8f3;
+    border-left-color: #2e8b57;
+}
+.dosha-card.vata h3 {
+    color: #2e8b57;
+}
+
+/* --- Pitta --- */
+.dosha-card.pitta {
+    background: #fffaf0;
+    border-left-color: #bfa36a;
+}
+.dosha-card.pitta h3 {
+    color: #bfa36a;
+}
+
+/* --- Kapha --- */
+.dosha-card.kapha {
+    background: #f5f9f2;
+    border-left-color: #7da27d;
+}
+.dosha-card.kapha h3 {
+    color: #7da27d;
+}
+
+/* Common Text Styling */
+.dosha-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dosha-card p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.dosha-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.dosha-card li {
+    margin-bottom: 8px;
+    color: #555;
+    position: relative;
+    padding-left: 18px;
+}
+
+/* Decorative leaf bullet */
+.dosha-card li::before {
+    content: "🌿";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* === Profile Page (Green–Gold Theme) === */
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    min-height: calc(100vh - 70px);
+}
+
+/* Page Heading */
+.profile-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #f4e5b1; /* soft gold */
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+/* Profile Card */
+.profile-content {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Info Section */
+.profile-info {
+    margin-bottom: 40px;
+}
+
+.profile-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #0b6b4f; /* herbal green */
+    font-weight: 700;
+    border-left: 4px solid #bfa36a;
+    padding-left: 10px;
+}
+
+/* Info Items */
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #e6e3da;
+    transition: background 0.3s ease;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.info-item:hover {
+    background: #f9f8f3; /* soft cream hover */
+    border-radius: 10px;
+    padding: 15px 10px;
+}
+
+/* Labels and Values */
+.info-item label {
+    font-weight: 600;
+    color: #0b6b4f;
+}
+
+.info-item span {
+    color: #555;
+}
+
+/* Profile Actions */
+.profile-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profile-actions .action-btn {
+    padding: 14px 28px;
+    background: white;
+    color: #0b6b4f;
+    border: 2px solid #0b6b4f;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.profile-actions .action-btn:hover {
+    background: linear-gradient(135deg, #0b6b4f 0%, #bfa36a 100%);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* === Responsive Design (Ayurvedic Theme) === */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: #f9f8f3; /* soft cream background */
+        width: 100%;
+        text-align: center;
+        transition: left 0.3s ease;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
+        z-index: 999;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-link {
+        color: #0b6b4f;
+        padding: 10px 0;
+        font-weight: 600;
+    }
+
+    .nav-link:hover {
+        color: #bfa36a; /* gold hover */
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        background: #0b6b4f;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        padding: 40px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+        color: #f4e5b1;
+    }
+
+    .dosha-icons {
+        gap: 20px;
+    }
+
+    .dosha-icon {
+        padding: 20px;
+        width: 100%;
+    }
+
+    /* Features Section */
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Assessment Page */
+    .assessment-nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Results Page */
+    .results-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* About Page */
+    .dosha-info {
+        grid-template-columns: 1fr;
+    }
+
+    /* Profile Page */
+    .info-item {
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
+
+    .info-item label {
+        color: #0b6b4f;
+    }
+
+    .info-item span {
+        color: #555;
+    }
+}
+
+/* === Animations (Ayurvedic Theme) === */
+
+/* Page fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.page.active {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* === Loading Spinner === */
+.loading {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 3px solid rgba(191, 163, 106, 0.3); /* light gold border */
+    border-radius: 50%;
+    border-top-color: #0b6b4f; /* green top for motion contrast */
+    animation: spin 1s ease-in-out infinite;
+}
+
+/* Spinner keyframe */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* ---- Force green–gold theme on Home page (overrides any blue gradient) ---- */
+body {
+  /* soft green → cream background to match the site theme */
+  background: linear-gradient(180deg, #eaf7ef 0%, #fff9e6 60%) !important;
+  color: #2b2b2b;
+}
+
+/* make sure hero area is neutral (no blue leftover) */
+.hero-section,
+.hero-section::before,
+.hero-section::after {
+  background: transparent !important;
+}
+
+/* ensure hero text and CTA match theme */
+.hero-content h1 { color: #0b6b4f !important; }
+.hero-content p  { color: #4d4d4d !important; }
+.cta-btn {
+  background: linear-gradient(135deg, #0b6b4f 0%, #bfa36a 100%) !important;
+  color: #fff !important;
+  box-shadow: 0 10px 25px rgba(11,107,79,0.25) !important;
+}
+
+/* remove any element-specific blue gradients (safeguard) */
+[class*="hero"], [class*="Hero"], .hero, .hero-bg, .hero-gradient {
+  background: transparent !important;
+  background-image: none !important;
+}
